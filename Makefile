@@ -19,3 +19,6 @@ dep:
 coverage:
 	go test -cover -coverprofile=coverage.out ./... && \
 	 go tool cover -html=coverage.out
+
+codecov:
+	go test ./... -race -coverprofile=coverage.txt -covermode=atomic
