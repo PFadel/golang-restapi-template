@@ -3,4 +3,7 @@ language: go
 go:
 - 1.15.x
 
-script: make dep && make lint && make test && go build
+install:
+  - make dep
+
+script: make lint && make test && go build
