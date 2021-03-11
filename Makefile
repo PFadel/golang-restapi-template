@@ -1,6 +1,9 @@
 -include .env
 export
 
+test: dep
+	go test ./...
+
 run:
 	go run main.go
 
