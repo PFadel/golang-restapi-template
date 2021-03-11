@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  api:
+    container_name: "api"
+    build:
+      context: .
+    ports:
+      - 8080:8080
