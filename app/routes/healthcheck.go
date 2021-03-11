@@ -9,7 +9,7 @@ import (
 	"github.com/PFadel/golang-restapi-template/app/models"
 )
 
-// HealthCheck é um wrapper para a HandleFunc que verifica a saúde da aplicação
+// HealthCheck is an wrapper to the HandlerFunc that checks the application's health
 func HealthCheck() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		switch r.Method {

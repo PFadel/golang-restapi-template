@@ -1,6 +1,6 @@
 package models
 
-// HealthCheckResponse representa o retorno da rota de health-check da aplicação
+// HealthCheckResponse is the struct that contains the application's health info
 type HealthCheckResponse struct {
 	ApplicationVersion string `json:"applicationVersion"`
 	Application        struct {
