@@ -15,7 +15,7 @@ Things I believe are no-brainers because most of the community use and are consi
 - [golangci](https://github.com/golangci/golangci-lint)
 - [Logrus](https://github.com/sirupsen/logrus)
 
-That being said, I will now try to speak about my other choices now.
+That being said, I will try to speak about my other choices below.
 
 ## Other Choices
 
