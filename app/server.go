@@ -5,6 +5,7 @@ import (
 
 	"github.com/PFadel/golang-restapi-template/app/container"
 	"github.com/PFadel/golang-restapi-template/app/interfaces"
+	"github.com/PFadel/golang-restapi-template/app/middlewares"
 	"github.com/PFadel/golang-restapi-template/app/routes"
 
 	"go.uber.org/fx"
@@ -17,7 +18,7 @@ func Start() {
 		container.SampleController(),
 		container.HTTPClient(),
 		fx.Invoke((func(svc interfaces.SampleService) {
-			http.HandleFunc("/get", routes.SampleRoute(svc))
+			http.HandleFunc("/get", middlewares.Cors(middlewares.Log(routes.SampleRoute(svc))))
 		})),
 	)
 	http.HandleFunc("/health-check", routes.HealthCheck())

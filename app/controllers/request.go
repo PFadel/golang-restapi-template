@@ -43,6 +43,7 @@ func request(cli *http.Client, req *http.Request, expectedStatusCode int, dataMo
 		"Headers":     req.Header,
 		"RequestBody": retrieveRequestBody(req),
 		"URL":         req.URL.String(),
+		"Params":      req.URL.Query(),
 	}).Infof("Executing request to: %s", req.URL.String())
 
 	start := time.Now()
