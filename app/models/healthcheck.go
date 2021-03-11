@@ -1,6 +1,6 @@
 package models
 
-// HealthCheckResponse TODO
+// HealthCheckResponse representa o retorno da rota de health-check da aplicação
 type HealthCheckResponse struct {
 	ApplicationVersion string `json:"applicationVersion"`
 	Application        struct {
