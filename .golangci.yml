@@ -8,8 +8,6 @@ linters-settings:
     fieldalignment: true
   gofmt:
     simplify: true
-  maligned:
-    suggest-new: true
 
 linters:
   enable:
