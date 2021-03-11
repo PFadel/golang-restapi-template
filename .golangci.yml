@@ -5,6 +5,7 @@ run:
 linters-settings:
   govet:
     check-shadowing: true
+    fieldalignment: true
   gofmt:
     simplify: true
   maligned:
@@ -24,7 +25,6 @@ linters:
     - govet
     - ineffassign
     - lll
-    - maligned
     - misspell
     - prealloc
     - unconvert
